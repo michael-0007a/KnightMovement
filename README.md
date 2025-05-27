@@ -46,7 +46,7 @@ Sounds simple? Think again! 🤯
 
 ```bash
 # Clone this legendary puzzle
-git clone https://github.com/yourusername/knight-movement-game.git
+git clone [https://github.com/yourusername/knight-movement-game.git](https://github.com/michael-0007a/KnightMovement.git)
 
 # Enter the knight's domain
 cd knight-movement-game
