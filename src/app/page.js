@@ -1,5 +1,7 @@
 "use client";
 import { useState, useCallback, useEffect } from 'react';
+import { Github, Instagram, Linkedin, Heart } from 'lucide-react';
+
 
 const KnightTour = () => {
   const [board, setBoard] = useState(Array(8).fill().map(() => Array(8).fill(0)));
@@ -342,6 +344,75 @@ export default function Home() {
         <div className="flex justify-center w-full mt-8">
           <KnightTour />
         </div>
+
+    <footer className="w-full mt-16 py-8 px-4 border-t border-[#FFD6A5]/20 bg-black/30 backdrop-blur-xl">
+      <div className="max-w-6xl mx-auto flex flex-col items-center space-y-4">
+        {/* First line - Made with love and social icons */}
+        <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8">
+          <div className="flex items-center gap-2 text-[#FFF1E6]/80 text-sm sm:text-base">
+            <span>Made with</span>
+            <Heart 
+              size={16} 
+              className="text-red-400 fill-red-400 animate-pulse" 
+            />
+            <span>by</span>
+            <span className="font-semibold text-[#FFD6A5] drop-shadow-[0_0_8px_rgba(255,214,165,0.3)]">
+              Michael Benedict
+            </span>
+          </div>
+
+          {/* Social Media Icons */}
+          <div className="flex items-center gap-4">
+            <a
+              href="https://github.com/michael-0007a"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative p-2 rounded-full bg-black/40 border border-[#FFD6A5]/20 hover:border-[#FFD6A5]/40 transition-all duration-300 hover:shadow-[0_8px_24px_rgba(255,214,165,0.2)]"
+              aria-label="GitHub"
+            >
+              <div className="absolute inset-0 bg-[#FFD6A5]/0 group-hover:bg-[#FFD6A5]/10 rounded-full transition-all duration-300"></div>
+              <Github 
+                size={18} 
+                className="text-[#FFF1E6]/70 group-hover:text-[#FFD6A5] transition-colors duration-300 relative z-10" 
+              />
+            </a>
+
+            <a
+              href="https://www.instagram.com/michael_0007a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative p-2 rounded-full bg-black/40 border border-[#FFD6A5]/20 hover:border-[#FFD6A5]/40 transition-all duration-300 hover:shadow-[0_8px_24px_rgba(255,214,165,0.2)]"
+              aria-label="Instagram"
+            >
+              <div className="absolute inset-0 bg-[#FFD6A5]/0 group-hover:bg-[#FFD6A5]/10 rounded-full transition-all duration-300"></div>
+              <Instagram 
+                size={18} 
+                className="text-[#FFF1E6]/70 group-hover:text-[#FFD6A5] transition-colors duration-300 relative z-10" 
+              />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/r-michael-benedict-"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative p-2 rounded-full bg-black/40 border border-[#FFD6A5]/20 hover:border-[#FFD6A5]/40 transition-all duration-300 hover:shadow-[0_8px_24px_rgba(255,214,165,0.2)]"
+              aria-label="LinkedIn"
+            >
+              <div className="absolute inset-0 bg-[#FFD6A5]/0 group-hover:bg-[#FFD6A5]/10 rounded-full transition-all duration-300"></div>
+              <Linkedin 
+                size={18} 
+                className="text-[#FFF1E6]/70 group-hover:text-[#FFD6A5] transition-colors duration-300 relative z-10" 
+              />
+            </a>
+          </div>
+        </div>
+
+        {/* Second line - Copyright */}
+        <div className="text-[#FFF1E6]/60 text-xs sm:text-sm text-center">
+          <p>© 2025 Knight's Tour Challenge. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
       </div>
     </main>
   );
