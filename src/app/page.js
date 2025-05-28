@@ -409,7 +409,7 @@ export default function Home() {
 
         {/* Second line - Copyright */}
         <div className="text-[#FFF1E6]/60 text-xs sm:text-sm text-center">
-          <p>© 2025 Knight's Tour Challenge. All rights reserved.</p>
+          <p>© 2025 KnightMovement. All rights reserved.</p>
         </div>
       </div>
     </footer>
